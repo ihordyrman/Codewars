@@ -17,7 +17,7 @@ let main argv =
         | 0 -> str.[len/2-1 .. len/2]
         | _ -> str.[len/2].ToString()
 
-    printfn "%s" (getMiddle "test")
+    printfn "%s" (getMiddle "tteesstt")
     printfn "%s" (getMiddle "testing")
     printfn "%s" (getMiddle "middle")
     printfn "%s" (getMiddle "A")
