@@ -27,6 +27,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TwoToOne", "TwoToOne\TwoToO
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AlphabeticalAddition", "AlphabeticalAddition\AlphabeticalAddition.fsproj", "{38A2E06B-51EA-4C5F-9ECD-CD0CE21A26A7}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OrderedCount", "OrderedCount\OrderedCount.fsproj", "{AF2F65B3-14DB-4679-954D-042D9945CD68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -184,5 +186,17 @@ Global
 		{38A2E06B-51EA-4C5F-9ECD-CD0CE21A26A7}.Release|x64.Build.0 = Release|Any CPU
 		{38A2E06B-51EA-4C5F-9ECD-CD0CE21A26A7}.Release|x86.ActiveCfg = Release|Any CPU
 		{38A2E06B-51EA-4C5F-9ECD-CD0CE21A26A7}.Release|x86.Build.0 = Release|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Debug|x64.Build.0 = Debug|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Debug|x86.Build.0 = Debug|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Release|x64.ActiveCfg = Release|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Release|x64.Build.0 = Release|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Release|x86.ActiveCfg = Release|Any CPU
+		{AF2F65B3-14DB-4679-954D-042D9945CD68}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
