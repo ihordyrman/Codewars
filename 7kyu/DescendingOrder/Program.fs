@@ -11,7 +11,7 @@
 
 [<EntryPoint>]
 let main argv =
-    let descendingOrder (n:int) =
+    let descendingOrder (n: int) =
         string n
         |> Seq.sort
         |> Seq.rev
@@ -20,7 +20,11 @@ let main argv =
         |> int
 
     let anotherDescending n =
-        let ret = n.ToString() |> Seq.sort |> Seq.rev |> System.String.Concat
+        let ret =
+            n.ToString()
+            |> Seq.sort
+            |> Seq.rev
+            |> System.String.Concat
         int ret
 
     printfn "%i" (anotherDescending 51234168)
