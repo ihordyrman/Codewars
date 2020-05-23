@@ -11,7 +11,7 @@
 
 [<EntryPoint>]
 let main argv =
-    let descendingOrder n =
+    let descendingOrder (n:int) =
         string n
         |> Seq.sort
         |> Seq.rev
