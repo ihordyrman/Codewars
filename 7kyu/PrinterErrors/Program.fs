@@ -18,9 +18,16 @@ open System.Linq
 
 [<EntryPoint>]
 let main argv =
-    let printerError (s: string) = String.Format("{0}/{1}", s.Count(fun x -> (int x < 97) || (int x > 109)), s.Length)
+    let printerError (s: string) =
+        String.Format("{0}/{1}", s.Count(fun x -> (int x < 97) || (int x > 109)), s.Length)
+
+    let betterPrinterError (s: string) =
+        sprintf "%d/%d"
+            (s
+             |> Seq.sumBy (fun x ->
+                 if x > 'm' then 1 else 0)) s.Length
 
     printfn "%s" (printerError "aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
-    printfn "%s" (printerError "kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyzuuuuu")
-    printfn "%s" (printerError "kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
+    printfn "%s" (betterPrinterError "kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyzuuuuu")
+    printfn "%s" (betterPrinterError "kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
     0 // return an integer exit code
