@@ -37,6 +37,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CategorizeNewMember", "Cate
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DontGiveMeFive", "DontGiveMeFive\DontGiveMeFive.fsproj", "{133F9376-7D53-4681-8A32-9AD057DEE79D}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CountTheDigit", "CountTheDigit\CountTheDigit.fsproj", "{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -254,5 +256,17 @@ Global
 		{133F9376-7D53-4681-8A32-9AD057DEE79D}.Release|x64.Build.0 = Release|Any CPU
 		{133F9376-7D53-4681-8A32-9AD057DEE79D}.Release|x86.ActiveCfg = Release|Any CPU
 		{133F9376-7D53-4681-8A32-9AD057DEE79D}.Release|x86.Build.0 = Release|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Debug|x64.Build.0 = Debug|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Debug|x86.Build.0 = Debug|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Release|x64.ActiveCfg = Release|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Release|x64.Build.0 = Release|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Release|x86.ActiveCfg = Release|Any CPU
+		{23CA0863-AB57-4B7B-82B3-F9BAF7C5AAA7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
