@@ -47,6 +47,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MaxLengthDiff", "MaxLengthD
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MaximumMultiple", "MaximumMultiple\MaximumMultiple.fsproj", "{941BE991-7F22-4E09-B8E1-0568A7CAB914}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BuildingStringsFromHash", "BuildingStringsFromHash\BuildingStringsFromHash.fsproj", "{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -324,5 +326,17 @@ Global
 		{941BE991-7F22-4E09-B8E1-0568A7CAB914}.Release|x64.Build.0 = Release|Any CPU
 		{941BE991-7F22-4E09-B8E1-0568A7CAB914}.Release|x86.ActiveCfg = Release|Any CPU
 		{941BE991-7F22-4E09-B8E1-0568A7CAB914}.Release|x86.Build.0 = Release|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Debug|x64.Build.0 = Debug|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Debug|x86.Build.0 = Debug|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Release|x64.ActiveCfg = Release|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Release|x64.Build.0 = Release|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Release|x86.ActiveCfg = Release|Any CPU
+		{E0A4A830-774E-4EF6-9970-53DFD7AE3BC1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
