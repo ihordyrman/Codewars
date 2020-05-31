@@ -11,13 +11,13 @@ open System
 
 [<EntryPoint>]
 let main argv =
-    let solve n = 
-        seq { 1 .. n - 1} 
-        |> Seq.filter (fun x -> x % 3 = 0 || x % 5 = 0) 
+    let solve n =
+        seq { 1 .. n - 1}
+        |> Seq.filter (fun x -> x % 3 = 0 || x % 5 = 0)
         |> Seq.sum
 
-    let anotherSolve n = 
-        seq { for x in 3..(n - 1) do if x % 3 = 0 || x % 5 = 0 then yield x } 
+    let anotherSolve n =
+        seq { for x in 3..(n - 1) do if x % 3 = 0 || x % 5 = 0 then yield x }
         |> Seq.sum
 
     printfn "%A" (solve 12)

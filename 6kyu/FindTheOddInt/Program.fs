@@ -8,12 +8,12 @@ open System
 
 [<EntryPoint>]
 let main argv =
-    let inline findOdd (numbers: List<int>) = 
-        numbers 
+    let inline findOdd (numbers: List<int>) =
+        numbers
         |> List.countBy id
         |> List.find (fun (_, count) -> count % 2 = 1)
-        |> fst 
-    
+        |> fst
+
     let cleverFindOdd numbers = List.reduce (^^^)
 
     let n = [20; 1; -1; 2; -2; 3; 3; 5; 5; 1; 2; 4; 20; 4; -1; -2; 5]

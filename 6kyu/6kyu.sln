@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MultiplesOf3or5", "Multiple
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FindTheOddInt", "FindTheOddInt\FindTheOddInt.fsproj", "{54F43298-DFF0-4730-8FB8-4B1B14C316A5}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "StopSpinningMyWords", "StopSpinningMyWords\StopSpinningMyWords.fsproj", "{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{54F43298-DFF0-4730-8FB8-4B1B14C316A5}.Release|x64.Build.0 = Release|Any CPU
 		{54F43298-DFF0-4730-8FB8-4B1B14C316A5}.Release|x86.ActiveCfg = Release|Any CPU
 		{54F43298-DFF0-4730-8FB8-4B1B14C316A5}.Release|x86.Build.0 = Release|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Debug|x64.Build.0 = Debug|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Debug|x86.Build.0 = Debug|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Release|x64.ActiveCfg = Release|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Release|x64.Build.0 = Release|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Release|x86.ActiveCfg = Release|Any CPU
+		{485B2AA9-50B1-4D09-BEAE-C1FBE0AC638F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
