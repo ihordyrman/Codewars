@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Remove_the_minumum</RootNamespace>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+</Project>
