@@ -27,9 +27,6 @@ namespace GiveMeADiamond
             Console.WriteLine(Print(15));
             Console.WriteLine(Print(9));
             Console.WriteLine(Print(8));
-
-
-            // "  *\n" " ***\n" "*****\n" " ***\n" "  *\n"
         }
 
         private static string Print(int n)
