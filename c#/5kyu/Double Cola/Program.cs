@@ -35,11 +35,16 @@ namespace Double_Cola
         private static string WhoIsNext(string[] names, long n)
         {
             if (n <= names.Length)
+            {
                 return names[n - 1];
+            }
 
             var x = 0;
 
-            while (5 * (long) Math.Pow(2, x + 1) < n + 5) x++;
+            while (5 * (long) Math.Pow(2, x + 1) < n + 5)
+            {
+                x++;
+            }
 
             var sets = 5 * (long) Math.Pow(2, x);
 
@@ -52,9 +57,8 @@ namespace Double_Cola
 
         private static string SuperSimpleWhoIsNext(string[] names, long n)
         {
-            var i = n-1;
-            while (i >= names.Length)
-                i = (i - names.Length) / 2;
+            var i = n - 1;
+            while (i >= names.Length) i = (i - names.Length) / 2;
             return names[i];
         }
     }
