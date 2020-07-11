@@ -27,9 +27,9 @@ namespace Double_Cola
         static void Main(string[] args)
         {
             var names = new[] {"Sheldon", "Leonard", "Penny", "Rajesh", "Howard"};
-            // Console.WriteLine(WhoIsNext(names, 1));
+            Console.WriteLine(WhoIsNext(names, 1));
             Console.WriteLine(WhoIsNext(names, 52));
-            // Console.WriteLine(WhoIsNext(names, 7230702951));
+            Console.WriteLine(SuperSimpleWhoIsNext(names, 7230702951));
         }
 
         private static string WhoIsNext(string[] names, long n)
@@ -48,6 +48,14 @@ namespace Double_Cola
             var position = (queue - 1) / (sets / names.Length);
 
             return names[position];
+        }
+
+        private static string SuperSimpleWhoIsNext(string[] names, long n)
+        {
+            var i = n-1;
+            while (i >= names.Length)
+                i = (i - names.Length) / 2;
+            return names[i];
         }
     }
 }
