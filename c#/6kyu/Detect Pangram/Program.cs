@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Detect_Pangram
 {
@@ -14,7 +15,7 @@ namespace Detect_Pangram
         private static void Main()
         {
             Console.WriteLine(IsPangram("The quick brown fox jumps over the lazy dog."));
-            Console.WriteLine(IsPangram("Another sentence."));
+            Console.WriteLine(IsLinqPangram("Another sentence."));
         }
 
         private static bool IsPangram(string str)
@@ -27,5 +28,8 @@ namespace Detect_Pangram
 
             return true;
         }
+
+        private static bool IsLinqPangram(string str) =>
+            str.Where(char.IsLetter).Select(char.ToLower).Distinct().Count() == 26;
     }
 }
