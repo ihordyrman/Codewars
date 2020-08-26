@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Single_character_palindromes
 {
@@ -26,16 +27,13 @@ namespace Single_character_palindromes
         private static string Solve(string s)
         {
             if (string.IsNullOrEmpty(s)) return "not possible";
-
-            for (var i = 0; i < s.Length / 2; i++)
-            {
-                if (s[i] == s[s.Length - 1 - i]) continue;
-                if (s.Length % 2 == 0) return "not possible";
-
-                // todo: check if it possible to remove one letter
-            }
-
-            return "OK";
+            if (s.SequenceEqual(s.Reverse())) return "OK";
+            if (s.Length % 2 == 0) return "not possible";
+            return s.Where((t, i) => 
+                s.Remove(i, 1)
+                    .SequenceEqual(s.Remove(i, 1).Reverse())).Any() 
+                ? "remove one" 
+                : "not possible";
         }
     }
 }
