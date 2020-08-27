@@ -18,22 +18,27 @@ namespace Single_character_palindromes
     {
         private static void Main()
         {
-            // check if palindrome
             Console.WriteLine(Solve("abba")); // OK
+            Console.WriteLine(Solve("hannah")); // OK
             Console.WriteLine(Solve("abbaa")); // remove one
+            Console.WriteLine(Solve("madmam")); // remove one
             Console.WriteLine(Solve("abbaab")); // not possible
+            Console.WriteLine(Solve("raydarm")); // not possible
         }
 
         private static string Solve(string s)
         {
             if (string.IsNullOrEmpty(s)) return "not possible";
             if (s.SequenceEqual(s.Reverse())) return "OK";
-            if (s.Length % 2 == 0) return "not possible";
-            return s.Where((t, i) => 
-                s.Remove(i, 1)
-                    .SequenceEqual(s.Remove(i, 1).Reverse())).Any() 
-                ? "remove one" 
-                : "not possible";
+
+            for (var i = 0; i < s.Length; i++)
+            {
+                var temp = s.Remove(i, 1);
+                if (temp.SequenceEqual(temp.Reverse()))
+                    return "remove one";
+            }
+
+            return "not possible";
         }
     }
 }
