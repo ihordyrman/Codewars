@@ -234,3 +234,5 @@ fabric.properties
 .idea/httpRequests
 .idea/caches/build_file_checksums.ser
 *.sln
+c#/6kyu/Sum consecutives/.vscode/launch.json
+c#/6kyu/Sum consecutives/.vscode/tasks.json
