@@ -236,3 +236,4 @@ fabric.properties
 *.sln
 c#/6kyu/Sum consecutives/.vscode/launch.json
 c#/6kyu/Sum consecutives/.vscode/tasks.json
+.vscode
