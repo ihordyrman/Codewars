@@ -30,7 +30,9 @@ namespace Solomons_Quest_for_the_Temporal_Crystal
             {
                 timeDilation += dimension[0];
                 for (var i = 0; i < 2; i++)
-                    result[i] += (int)Math.Pow(2, timeDilation) * ((2 - i - dimension[1]) % 2) * dimension[2];
+                    result[i] += (int)Math.Pow(2, timeDilation) 
+                        * ((2 - i - dimension[1]) % 2) 
+                        * dimension[2];
             }
 
             return result;
