@@ -8,6 +8,7 @@ namespace String_Doubles
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(DoublesRegex("bpdhrbdvblxzhrdtvxnlznhtjdxnvhjxzrpdxnfjzxnvnfptlrjxrblbnfhlbrnznvhfphdbbjplhdvxznpnhlvrbhdrfzndznxrbdrxbhfpbrpzrvnfnhbdptrlphxvfrbpdjvxrjvblbxbfjztrfrtlrjfpfjnbxtnrlbnztrtfjphdxjvnlvbfrtzpbdjdnpbhjtnlfrpbjnhrvlnfthdlfjtljxdhphrbxnbvpvflfdnvzhtnbdlzbjzfltjxjbpbjnvdnlrfjtvnprpnrzrjfvrhdpbnldjpljzjlfldzvhvrpdnvjnlzfdjhnxfxrjrlxrxjhnbfbhvxthrxfrntrvzjbjlfhbhrfjztlhjhpvrbntprbjbxjtrxhfrtlvftrbxvlntflpjzdzdbdtdtndhxfnztltprtjdrjdjnvhvlbxrzfdzvjzdbzbjxhnpltdbpjfjrdrfxljpjtlhvdjhdhphnzfvdpxlrjvbnxfrnlvjbhjhxtltnxtxrltpnbdbfrzbvnhxdtprpvzvpjfprzxznhbplzrbjbjfr"));
             Console.WriteLine(DoublesRegex("abbbzz"));
             Console.WriteLine(DoublesRegex("zzzzykkkd"));
             Console.WriteLine(DoublesRegex("abbcccdddda"));
@@ -35,7 +36,13 @@ namespace String_Doubles
         }
 
         private static string DoublesRegex(string str) {
-            return Regex.Replace(str, @"(\w)\1", "");
+            string result = str;
+            while(true) {
+                var len = result.Length;
+                result = Regex.Replace(result, @"(\w)\1", "");
+                if (len == result.Length) break;
+            }
+            return result;
         }
     }
 }
