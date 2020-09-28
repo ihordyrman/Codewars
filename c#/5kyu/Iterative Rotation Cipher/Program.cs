@@ -27,14 +27,11 @@ namespace Iterative_Rotation_Cipher
 
             for (int i = 0; i < arr.Length; i++)
             {
-                for (int j = 0; j <= n; j++)
-                {
-                    arr[i] = arr[i][1..] + arr[i].Substring(0, 1);
-                }
+                for (int j = 0; j < n; j++)
+                    arr[i] = arr[i][^1] + arr[i][..^1];
             }
 
             return string.Join(" ", arr);
-            // todo: finish
         }
         public static string Decode(string s)
         {
