@@ -11,6 +11,7 @@ namespace Iterative_Rotation_Cipher
             Console.WriteLine(encoded);
             var decoded = Decode(encoded);
             Console.WriteLine(decoded);
+            List<Action> list = new List<Action>();
         }
 
         public static string Encode(int n, string s)
