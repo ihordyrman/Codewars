@@ -12,18 +12,22 @@ namespace What_century_is_it
             Console.WriteLine(WhatCentury("2259")); // 23
         }
 
-        private static string WhatCentury(string year) =>
-            (Convert.ToInt32(year) / 100 + (Convert.ToInt32(year) % 100 > 0 ? 1 : 0)) switch
+        private static string WhatCentury(string year)
+        {
+            var result = Convert.ToInt32(year) / 100 + (Convert.ToInt32(year) % 100 > 0 ? 1 : 0);
+            return result switch
             {
-                13 => "13th",
                 11 => "11th",
-                _ => ((Convert.ToInt32(year) / 100 + (Convert.ToInt32(year) % 100 > 0 ? 1 : 0)) % 10) switch
+                12 => "12th",
+                13 => "13th",
+                _ => (result % 10) switch
                 {
-                    1 => Convert.ToInt32(year) / 100 + (Convert.ToInt32(year) % 100 > 0 ? 1 : 0) + "st",
-                    2 => Convert.ToInt32(year) / 100 + (Convert.ToInt32(year) % 100 > 0 ? 1 : 0) + "nd",
-                    3 => Convert.ToInt32(year) / 100 + (Convert.ToInt32(year) % 100 > 0 ? 1 : 0) + "rd",
-                    _ => Convert.ToInt32(year) / 100 + (Convert.ToInt32(year) % 100 > 0 ? 1 : 0) + "th"
+                    1 => result + "st",
+                    2 => result + "nd",
+                    3 => result + "rd",
+                    _ => result + "th"
                 }
             };
+        }
     }
 }
